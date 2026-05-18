@@ -6,11 +6,11 @@ int main() {
     string command;
     int alert = 0;
     bool systemBreached = false;
-
+    int attempts = 3;
     cout << "=== CYBER TERMINAL ===" << endl;
     cout << "Type 'help' to see available commands." << endl;
 
-    while (alert < 100 && !systemBreached) {
+   while (alert < 100 && !systemBreached && attempts > 0){
         cout << "\n[Hacker_Root]: ";
         cin >> command;
 
