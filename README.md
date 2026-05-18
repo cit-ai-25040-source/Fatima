@@ -1,6 +1,6 @@
-===============================
+
       CYBER TERMINAL GAME
-===============================
+
 
 Project Description:
 This project is a simple text-based hacking simulation game created using C++. 
