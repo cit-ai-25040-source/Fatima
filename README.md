@@ -1,76 +1,34 @@
+Cyber Terminal Game
 
-  CYBER TERMINAL GAME
+Project Idea  
+This is a simple console-based game written in C++.the idea of the project is to simulate a hacking terminal where the user enters commands and the system responds accordingly. The player tries to successfully hack the system while avoiding detection by the security system.
 
-Description
-This is a simple C++ console-based hacking simulation game.
-The player interacts with a fake terminal system by entering commands to scan, hack, and check system status. The goal is to breach the system before the alert level reaches 100%.
+---
+Programming Language : C++
+---
 
-How the Game Works
+What the Project Uses  
+- iostream library for input and output (cin, cout)  
+- string library to handle text commands  
+- variables to store game data like alert level, attempts, and system status  
+- loops (while loop) to keep the game running continuously  
+- conditions (if / else if) to check user commands and control the game flow  
+- arrays to store and validate allowed commands  
 
-You start inside a fake cyber terminal:
+---
 
-=== CYBER TERMINAL ===
-Type 'help' to see available commands.
+How the Game Works  
+The program runs in a loop and waits for the user to enter a command.  
+Each command has a specific function in the game.
 
-You can enter different commands:
+If the user enters a correct command, the program responds normally.  
+If the user enters an incorrect command, the alert level increases and the number of attempts decreases.
 
-help → Shows available commands
-scan → Finds a fake vulnerability
-hack → Solves a math challenge to breach the system
-status → Shows current alert level
+The game ends when:
+- The alert level reaches 100 (player loses)  
+- The system is successfully hacked (player wins)  
+- The user runs out of attempts  
+---
 
-Game Rules
-
-Wrong commands increase the alert level by 10%
-Wrong hack answers increase alert by 40%
-If alert reaches 100% → you lose
-If you solve the hack correctly → you win
-
-Features
-
-Uses arrays to store valid commands
-Uses functions to organize logic
-Command validation using loop search
-Simple interactive terminal style gameplay
-Alert system increases difficulty over time
-
-Code Concepts Used
-
-Array (Commands List)
-
-string commands[] = {"help", "scan", "hack", "status"};
-
-Functions
-
-showHelp() → displays available commands
-isValidCommand() → checks if input exists in array
-
-How to Compile and Run
-
-1. Compile
-
-g++ main.cpp -o game
-
-2. Run
-
-./game
-
-Objective
-
-Try to breach the system before your alert level hits 100%.
-Choose commands wisely and think fast.
-
-Future Improvements
-
-Add multiple levels
-Add random security codes
-Add time limit for hacking
-Add more commands like bruteforce, trace, disconnect
-Add sound effects or ASCII animations
-
-Author
-C++ beginner project focused on:
-Arrays
-Functions
-Loops
-Basic game logic
+Purpose of the Project  
+The purpose of this project is to practice basic C++ programming concepts such as loops, conditions, variables, arrays, and user input handling while building a simple interactive terminal game.
